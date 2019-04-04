@@ -8,7 +8,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class ScrollingWorld extends World
 {
-
+    int speed;
+    int score;
     /**
      * Constructor for objects of class ScrollingWorld.
      * 
@@ -16,11 +17,13 @@ public class ScrollingWorld extends World
     public ScrollingWorld(int width, int height, int res, boolean bounded)
     {    
         super(width, height, res, bounded); 
+        speed = -2;
+        score = 0;
     }
     
     public void scroll() {
         GreenfootImage bg = getBackground();
-        getBackground().drawImage(bg, -(31/16), 0);
-        getBackground().drawImage(bg, getWidth() -3, 0);
+        getBackground().drawImage(bg, speed, 0);
+        getBackground().drawImage(bg, getWidth() + 5, 0);
     }
 }

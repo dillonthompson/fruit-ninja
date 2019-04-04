@@ -1,11 +1,5 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
-/**
- * Write a description of class bugs here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class bugs extends Actor
 {
     /**
@@ -14,6 +8,15 @@ public class bugs extends Actor
      */
     public void act() 
     {
-        // Add your action code here.
-    }    
+        if(Greenfoot.isKeyDown("down"))
+        {
+            setLocation(getX(),getY()+9);
+            setRotation(360);
+        }
+        if(Greenfoot.isKeyDown("up"))
+        {
+            setLocation(getX(),getY()-9);
+            setRotation(360);
+        }
+    }
 }

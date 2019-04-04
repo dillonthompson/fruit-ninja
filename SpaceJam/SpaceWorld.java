@@ -8,7 +8,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class SpaceWorld extends ScrollingWorld
 {
-
+    int ballCount;
+    int bucketCount;
     /**
      * Constructor for objects of class SpacWorld.
      * 
@@ -16,9 +17,20 @@ public class SpaceWorld extends ScrollingWorld
     public SpaceWorld()
     {
         super(600, 600, 1, true);
+        addObject(new bugs(),100, 300);
+        ballCount = 0;
+        bucketCount = 0;
     }
 
     public void act() {
         scroll();
+    }
+    
+    public void countBalls() {
+        
+    }
+    
+    public void countBuckets() {
+        
     }
 }
