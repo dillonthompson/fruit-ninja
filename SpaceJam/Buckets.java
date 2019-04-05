@@ -14,6 +14,6 @@ public class Buckets extends Collectables
      */
     public void act() 
     {
-        // Add your action code here.
+        move(-5);
     }    
 }
